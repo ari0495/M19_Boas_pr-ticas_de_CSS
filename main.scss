@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bee79c;
+}
+
+.produtos {
+    max-width: 960px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    &__imagem {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    &__nome {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    &__descricao {
+        color: #666;
+    }
+
+    &--destaque {
+        border-color: gold;
+        background-color: #fffacd;
+    }
+}
